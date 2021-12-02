@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Accueil.css">
+
+<head>
+        <title>Design Thinking DU</title>
+</head>
+
+<body>
+<div class="navbar">
+  <a href="accueil.html">Accueil</a>
+  <a href="Actu.html">Actualités</a>
+  <a href="profil.html">Profil</a>
+  <a href="Forma.html">Formation</a>
+  <a href="#avis.html">Avis</a>
+  <a href="Agenda.html">Agenda</a>
+<input type="text" placeholder="Recherche...">
+  <div class="dropdown">
+    <button class="dropbtn">Langues 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Français</a>
+      <a href="#">English</a>
+    </div>
+  </div> 
+</div>
+
+<section class="w3-row-padding w3-center w3-light-grey">
+  <article class="w3-third">
+    <img src="fond_zoom_UGA_03.jpg" style="width:100%">
+  </article>
+</section>
+
+<section>
+	<br>
+	<article>
+		<h1>L'avenir, nous vous aidons à y penser !</h1>
+		<br>
+		<p class="sous">Bienvenue sur le site Design Thinking ! Nous sommes des étudiants du Diplôme Universitaire Université-Entreprise de l'Université Grenoble Alpes qui nous vous proposons de vous aider à construire vos projets profesionnels en cours ou futur, en lien avec votre formation. Que vous soyez étudiants de l'UGA ou d'une autre université, ce site est fait pour vous !</p>	
+	</article>
+	<br>
+</section>
+</section>
+
+<section class="slide">
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="UGA1.png" style="width:100%">
+    <div class="text">Rencontrez les anciens étudiants du DU Université-Entreprise !"</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="UGA2.png" style="width:100%">
+    <div class="text">Fête de la science 2021 : décrouvrez la communauté scientifique de l'UGA !</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="UGA3.jpg" style="width:100%">
+    <div class="text">Ayez accès au site de partout sur le campus de l'UGA grâce au QR code !</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000);
+}
+</script>
+<br>
+<a href="#" class="button">Plus d'actualités</a>
+<br>
+</section>
+<br>
+<section>
+	<br>
+<h1>Agenda</h1>
+<div class="flex-container">
+	<div><h2 class="titre">10 Octobre</h2>
+	<h3 class="intitule">Découvrez vos centres d'intérêts avec ACTAO</h3>
+	<p class="duree"><em>Du 10 Octobre au 20 Octobre<em/></p>
+	</div>
+	<div class="flex-container">
+	<div><h2 class="titre">21 Octobre</h2>
+	<h3 class="intitule">Créer vos différents projets professionnels</h3>
+	<p class="duree"><em>Du 21 Octobre au 31 Octobre<em/></p>
+	</div>
+</div>
+<br>
+<a href="Agenda.html" class="button">Plus d'événements</a>
+<br>
+</section>
+
+<footer>
+	<br>
+<img src="logo.png" style=" float: left; width:8%">
+<div class="container">
+	<div><p>UFR de Chimie‐Biologie Service scolarité 470, rue de la Chimie Bat. E ANDRE RASSAT 38400 Saint‐Martin‐d'Hères<br> Renseignements du‐universite‐entreprise @ univ‐ grenoble-alpes.fr</p>
+	</div>
+<br>
+</div>
+</footer>
+</body>
+</html>
